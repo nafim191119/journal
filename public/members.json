@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "01",
+        "name": "Bayazid",
+        "image": "https://i.ibb.co/tKMjy2w/428202228-852799916618940-5600140321394736173-n.jpg",
+        "role":"Manager",
+        "des":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam, similique ratione officia?",
+        "ID": "202216036",
+        "msg": "https://www.facebook.com/bayazid.hasan.79274",
+        "section": "B"
+    },
+    {
+        "_id": "02",
+        "name": "Nahid",
+        "image": "https://i.ibb.co/sHG6BPM/417496370-1148416492995892-5267463714203143275-n.jpg",
+        "role":"CEO",
+        "des":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam, similique ratione officia?",
+        "ID": "202216040",
+        "msg": "https://www.facebook.com/mdhumaunkabir.nahid",
+        "section": "B"
+    },
+    {
+        "_id": "03",
+        "name": "Nafim",
+        "image": "https://i.ibb.co/sHG6BPM/417496370-1148416492995892-5267463714203143275-n.jpg",
+        "role":"Asst CEO",
+        "des":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam, similique ratione officia?",
+        "ID": "202216040",
+        "msg": "https://www.facebook.com/mdhumaunkabir.nahid",
+        "section": "B"
+    },
+    {
+        "_id": "04",
+        "name": "Nafim",
+        "image": "https://i.ibb.co/sHG6BPM/417496370-1148416492995892-5267463714203143275-n.jpg",
+        "role":"Data Col.",
+        "des":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam, similique ratione officia?",
+        "ID": "202216040",
+        "msg": "https://www.facebook.com/mdhumaunkabir.nahid",
+        "section": "B"
+    },
+    {
+        "_id": "05",
+        "name": "Nafim",
+        "image": "https://i.ibb.co/sHG6BPM/417496370-1148416492995892-5267463714203143275-n.jpg",
+        "role":"Reporter",
+        "des":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam, similique ratione officia?",
+        "ID": "202216040",
+        "msg": "https://www.facebook.com/mdhumaunkabir.nahid",
+        "section": "B"
+    },
+    {
+        "_id": "06",
+        "name": "Nafim",
+        "image": "https://i.ibb.co/sHG6BPM/417496370-1148416492995892-5267463714203143275-n.jpg",
+        "role":"Dig. Mark.",
+        "des":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam, similique ratione officia?",
+        "ID": "202216040",
+        "msg": "https://www.facebook.com/mdhumaunkabir.nahid",
+        "section": "B"
+    }
+]
