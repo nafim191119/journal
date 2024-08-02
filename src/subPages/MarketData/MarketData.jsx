@@ -10,10 +10,10 @@ const marketData = [
 const MarketData = () => {
     return (
         <div>
-            <div className="bg-gray-100 px-2 shadow-md flex justify-between items-center gap-2">
-                <div className="flex justify-between items-center space-x-6">
+            <div className="bg-gray-100 px-8 shadow-md rounded-lg md:flex justify-between items-center">
+                <div className="flex flex-wrap justify-between items-center gap-2">
                     {marketData.map((data) => (
-                        <div key={data.index} className="text-center text-sm flex justify-between items-center gap-1">
+                        <div key={data.index} className="flex flex-col items-center text-center text-sm md:flex-row md:space-x-2 md:text-left">
                             <div className="font-bold text-red-600">{data.index}</div>
                             <div className="text-gray-700">{data.value}</div>
                             <div className="text-red-600">{data.change}</div>
