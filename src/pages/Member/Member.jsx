@@ -7,7 +7,7 @@ const Member = () => {
         fetch('members.json')
             .then(res => res.json())
             .then(data => setMembers(data))
-    }, [])
+    }, []);
     return (
         <div className="bg-gray-100 px-16">
             <h1 className="text-black font-bold text-4xl uppercase pt-8 underline text-center">Our Team</h1>

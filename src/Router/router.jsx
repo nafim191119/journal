@@ -8,6 +8,8 @@ import Sports from "../subPages/Sports/Sports";
 import Entertainment from "../subPages/Entertainment/Entertainment";
 import Science from "../subPages/Science/Science";
 import Romantic from "../subPages/Romantic/Romantic";
+import Horror from "../subPages/Horror/Horror";
+import Current from "../subPages/Current/Current";
 
 
 export const router = createBrowserRouter([
@@ -46,6 +48,14 @@ export const router = createBrowserRouter([
             {
                 path: "journal/romantic",
                 element: <Romantic></Romantic>
+            },
+            {
+                path: "journal/horror",
+                element: <Horror></Horror>
+            },
+            {
+                path: "journal/current",
+                element: <Current></Current>
             },
         ]
     },

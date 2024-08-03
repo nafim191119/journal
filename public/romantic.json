@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "A Love Story in Paris",
+        "category": "Romantic",
+        "author": "কাব্য",
+        "date_published": "2024-08-02",
+        "content": "আজকাল বাংলা ভাষাভাষী মাত্রই কাব্য সচেতন, অপসংস্কৃত  ছেড়ে দিয়ে শুদ্ধ সাহিত্যের খোঁজে অনলাইনএ প্রায়ই ঢু মেরে থাকেন।  আধুনিক তথ্যপ্রবাহের যুগে অনলাইনে বাংলা ভালোবাসার কবিতার অভাব নিয়ে আক্ষেপ চলছে অনেকদিন ধরেই।  তাছাড়া কিশোর আর তরুণ প্রজন্মের মাঝে বাংলা সাহিত্যের বিস্তার হওয়া উচিত কেননা তারাই অনলাইন এ বেশি তথ্য আদান-প্রদান করেন এবং তারাই ভবিষ্যতের কান্ডারি, দেশীয় সংকৃতির বাহক।  তাই কিছু বাংলা কবিতা নিয়ে আবার হাজির হলাম।",
+        "tags": ["Love ", "Paris ", "Romance"],
+        "popular": true
+    },
+    {
+        "id": 2,
+        "title": "Romance Under the Stars",
+        "category": "Romantic",
+        "author": "John Smith",
+        "date_published": "2024-08-01",
+        "content": "An enchanting evening under the stars where two souls found their destiny...",
+        "tags": ["Romance", "Stars", "Love"],
+        "popular": false
+    },
+    {
+        "id": 3,
+        "title": "The Heart's Whisper",
+        "category": "Romantic",
+        "author": "Emily Clark",
+        "date_published": "2024-07-30",
+        "content": "In a quiet town, a shy poet's heart whispered tales of love...",
+        "tags": ["Heart", "Whisper", "Love"],
+        "popular": true
+    },
+    {
+        "id": 4,
+        "title": "A Serenade in the Rain",
+        "category": "Romantic",
+        "author": "Michael Brown",
+        "date_published": "2024-07-29",
+        "content": "On a rainy evening, a serenade brought two lovers closer...",
+        "tags": ["Serenade", "Rain", "Romance"],
+        "popular": false
+    }
+]

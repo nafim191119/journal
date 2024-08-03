@@ -34,10 +34,12 @@ const Nav = () => {
                             <li>
                                 <summary>Journal</summary>
                                 <ul className="p-2">
+                                    <li><Link to={"journal/current"}>Current Affairs</Link></li>
                                     <li><Link to={"journal/romantic"}>Romantic</Link></li>
                                     <li><Link to={"journal/sports"}>Sports</Link></li>
                                     <li><Link to={"journal/entertainment"}>Entertainment</Link></li>
                                     <li><Link to={"journal/science"}>Science</Link></li>
+                                    <li><Link to={"journal/horror"}>Horror</Link></li>
                                 </ul>
                             </li>
                             <li><Link to={"/member"}>Member</Link></li>
@@ -56,10 +58,12 @@ const Nav = () => {
                             <details>
                                 <summary>Journal</summary>
                                 <ul className="p-2 text-black w-40 bg-white">
+                                    <li><Link to={"journal/current"}>Current Affairs</Link></li>
                                     <li><Link to={"journal/romantic"}>Romantic</Link></li>
                                     <li><Link to={"journal/sports"}>Sports</Link></li>
                                     <li><Link to={"journal/entertainment"}>Entertainment</Link></li>
                                     <li><Link to={"journal/science"}>Science</Link></li>
+                                    <li><Link to={"journal/horror"}>Horror</Link></li>
                                 </ul>
                             </details>
                         </li>
