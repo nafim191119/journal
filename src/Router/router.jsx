@@ -10,6 +10,7 @@ import Science from "../subPages/Science/Science";
 import Romantic from "../subPages/Romantic/Romantic";
 import Horror from "../subPages/Horror/Horror";
 import Current from "../subPages/Current/Current";
+import Gallery from "../pages/Gallery/Gallery";
 
 
 export const router = createBrowserRouter([
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>
+            },
+            {
+                path: "gallery",
+                element: <Gallery></Gallery>
             },
             {
                 path: "member",

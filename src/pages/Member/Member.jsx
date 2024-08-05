@@ -9,9 +9,9 @@ const Member = () => {
             .then(data => setMembers(data))
     }, []);
     return (
-        <div className="bg-gray-100 px-16">
+        <div className="bg-gray-100 px-8">
             <h1 className="text-black font-bold text-4xl uppercase pt-8 underline text-center">Our Team</h1>
-            <div className="grid lg:grid-cols-6 md:grid-cols-5 grid-cols-3 py-4 justify-center items-center gap-4">
+            <div className="grid lg:grid-cols-6 md:grid-cols-5 grid-cols-3 py-6 justify-center items-center gap-6">
                 {
                     members.map(item => <Card 
                     key={item.id}

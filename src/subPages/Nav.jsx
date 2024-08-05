@@ -4,7 +4,7 @@ import Calander from "../components/Calander";
 
 
 const Nav = () => {
-    const isAdmin = false;
+    const isAdmin = true;
     return (
         <div>
             <div className="bg-base-300 py-1 flex text-white font-bold gap-1 justify-end text-sm">
@@ -32,22 +32,26 @@ const Nav = () => {
                             className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-black font-semibold">
                             <li><Link to={"/"}>Home</Link></li>
                             <li>
-                                <summary>Journal</summary>
-                                <ul className="p-2">
-                                    <li><Link to={"journal/current"}>Current Affairs</Link></li>
-                                    <li><Link to={"journal/romantic"}>Romantic</Link></li>
-                                    <li><Link to={"journal/sports"}>Sports</Link></li>
-                                    <li><Link to={"journal/entertainment"}>Entertainment</Link></li>
-                                    <li><Link to={"journal/science"}>Science</Link></li>
-                                    <li><Link to={"journal/horror"}>Horror</Link></li>
-                                </ul>
+                                <details>
+                                    <summary>Journal</summary>
+                                    <ul className="p-2">
+                                        <li><Link to={"journal/current"}>Current Affairs</Link></li>
+                                        <li><Link to={"journal/romantic"}>Romantic</Link></li>
+                                        <li><Link to={"journal/sports"}>Sports</Link></li>
+                                        <li><Link to={"journal/entertainment"}>Entertainment</Link></li>
+                                        <li><Link to={"journal/science"}>Science</Link></li>
+                                        <li><Link to={"journal/horror"}>Horror</Link></li>
+                                    </ul>
+                                </details>
                             </li>
+                            <li><Link to={"/gallery"}>Gallery</Link></li>
                             <li><Link to={"/member"}>Member</Link></li>
                             <li><Link to={"/about"}>About</Link></li>
                             <li><Link to={"/contact"}>Contact</Link></li>
                         </ul>
                     </div>
                     <div className="flex justify-center items-center">
+                        <img src="../assets/logo.png" alt="" />
                         <Link to={"/"}><h1 className="md:text-3xl font-bold text-black pl-6">Excited Electron</h1></Link>
                     </div>
                 </div>
@@ -67,6 +71,7 @@ const Nav = () => {
                                 </ul>
                             </details>
                         </li>
+                        <li><Link to={"/gallery"}>Gallery</Link></li>
                         <li><Link to={"/member"}>Member</Link></li>
                         <li><Link to={"/about"}>About</Link></li>
                         <li><Link to={"/contact"}>Contact</Link></li>
@@ -77,7 +82,7 @@ const Nav = () => {
                         isAdmin ?
                             <div>
                                 <div className="avatar">
-                                    <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring ring-offset-2">
+                                    <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2 hover:pointed">
                                         <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                                     </div>
                                 </div>

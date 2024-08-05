@@ -1,9 +1,8 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../Romantic/font.css"
+import "../Current/fontC.css";
 
-const CardR = ({ item }) => {
-    const { id, title, category, author, date_published, content, tags, popular, img } = item;
-
+const CardC = ({ item }) => {
+    const { id, title, category, author, date_published, content, tags, popular, img, author_info } = item;
     return (
         <div>
             {
@@ -30,6 +29,7 @@ const CardR = ({ item }) => {
                                 <div className="pb-2 text-xl text-black tiro-bangla-regular">{content}</div>
                                 <div className=''>
                                     <h1 className="text-indigo-700 font-bold text-2xl author-name">{author}</h1>
+                                    {author_info ? <h1 className="text-black font-bold text-2xl author-name">{author_info}</h1> : null}
                                 </div>
                                 <div className="divider"></div>
                             </div>
@@ -60,13 +60,14 @@ const CardR = ({ item }) => {
                             <div className="pb-2 text-xl text-black tiro-bangla-regular">{content}</div>
                             <div className=''>
                                 <h1 className="text-indigo-700 font-bold text-2xl author-name">{author}</h1>
+                                {author_info ? <h1 className="text-black font-bold text-2xl author-name">{author_info}</h1> : null}
                             </div>
                             <div className="divider"></div>
                         </div>
                     </>
             }
-        </div>
+        </div >
     );
 };
 
-export default CardR;
+export default CardC;

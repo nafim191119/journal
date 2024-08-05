@@ -1,9 +1,8 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../Romantic/font.css"
+import "../Science/fontSci.css";
 
-const CardR = ({ item }) => {
+const CardSci = ({ item }) => {
     const { id, title, category, author, date_published, content, tags, popular, img } = item;
-
     return (
         <div>
             {
@@ -69,4 +68,4 @@ const CardR = ({ item }) => {
     );
 };
 
-export default CardR;
+export default CardSci;

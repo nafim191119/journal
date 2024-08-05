@@ -5,7 +5,7 @@ const Card = ({ item }) => {
     return (
         <div>
             <div className="mx-auto">
-                <img className="hover:shadow rounded h-48" width={160} src={image} alt="" />
+                <img className="hover:shadow h-[160px] w-[150px]" src={image} alt="" />
                 {/* TODO: Every member have their own personal details and experience. */}
                 <Link><h2 className="text-black font-bold text-2xl hover:underline mt-2">{name}</h2></Link>
                 <h3 className="text-blue-600 font-bold text-xl mb-2">{role}</h3>
