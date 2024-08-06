@@ -4,7 +4,7 @@ import Calander from "../components/Calander";
 
 
 const Nav = () => {
-    const isAdmin = true;
+    const isAdmin = false;
     return (
         <div>
             <div className="bg-base-300 py-1 flex text-white font-bold gap-1 justify-end text-sm">

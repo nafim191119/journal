@@ -29,13 +29,13 @@ const CardC = ({ item }) => {
                                 <div className="pb-2 text-xl text-black tiro-bangla-regular">{content}</div>
                                 <div className=''>
                                     <h1 className="text-indigo-700 font-bold text-2xl author-name">{author}</h1>
-                                    {author_info ? <h1 className="text-black font-bold text-2xl author-name">{author_info}</h1> : null}
+                                    {author_info ? <h1 className="text-black font-bold author-name">{author_info}</h1> : null}
                                 </div>
-                                <div className="divider"></div>
                             </div>
                             <div className='pr-10'>
-                                <img className='w-[400px] rounded-lg' src={img} alt="" />
+                                <img className='w-[600px] rounded-lg' src={img} alt="" />
                             </div>
+                            <div className="divider"></div>
                         </div>
                     </>
                     :
