@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Clock from "../components/Clock";
 import Calander from "../components/Calander";
+import "../subPages/Nav.css";
 
 
 const Nav = () => {
@@ -10,9 +11,9 @@ const Nav = () => {
             <div className="bg-base-300 py-1 flex text-white font-bold gap-1 justify-end text-sm">
                 <Clock></Clock> || <Calander></Calander> || <Link className="text-white hover:underline" to="/">Exclusive journal is here...</Link>
             </div>
-            <div className="navbar bg-white text-black font-semibold">
+            <div className="navbar bg-white text-black font-semibold author-name tiro-bangla-regular">
                 <div className="navbar-start">
-                    <div className="dropdown">
+                    <div className="dropdown text-2xl">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -29,52 +30,56 @@ const Nav = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-black font-semibold">
-                            <li><Link to={"/"}>Home</Link></li>
+                            className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-black font-bold">
+                            <li><Link to={"/"}>হোম</Link></li>
                             <li>
                                 <details>
-                                    <summary>Journal</summary>
+                                    <summary>জার্নাল</summary>
                                     <ul className="p-2">
-                                        <li><Link to={"journal/current"}>Current Affairs</Link></li>
-                                        <li><Link to={"journal/romantic"}>Romantic</Link></li>
-                                        <li><Link to={"journal/sports"}>Sports</Link></li>
-                                        <li><Link to={"journal/entertainment"}>Entertainment</Link></li>
-                                        <li><Link to={"journal/science"}>Science</Link></li>
-                                        <li><Link to={"journal/horror"}>Horror</Link></li>
+                                        <li><Link to={"journal/current"}>বর্তমান ঘটনা</Link></li>
+                                        {/* <li><Link to={"journal/romantic"}>Romantic</Link></li> */}
+                                        {/* <li><Link to={"journal/sports"}>Sports</Link></li> */}
+                                        {/* <li><Link to={"journal/entertainment"}>Entertainment</Link></li> */}
+                                        {/* <li><Link to={"journal/science"}>Science</Link></li> */}
+                                        {/* <li><Link to={"journal/horror"}>Horror</Link></li> */}
                                     </ul>
                                 </details>
                             </li>
-                            <li><Link to={"/gallery"}>Gallery</Link></li>
-                            <li><Link to={"/member"}>Member</Link></li>
-                            <li><Link to={"/about"}>About</Link></li>
-                            <li><Link to={"/contact"}>Contact</Link></li>
+                            {/* <li><Link to={"/gallery"}>Gallery</Link></li> */}
+                            {/* <li><Link to={"/member"}>Member</Link></li> */}
+                            <li><Link to={"/about"}>আমাদের সম্পর্কে</Link></li>
+                            {/* <li><Link to={"/contact"}>Contact</Link></li> */}
                         </ul>
                     </div>
-                    <div className="flex justify-center items-center">
-                        <img src="../assets/logo.png" alt="" />
-                        <Link to={"/"}><h1 className="md:text-3xl font-bold text-black pl-6">Excited Electron</h1></Link>
+                    <div className="px-6">
+                        <Link to={"/"}>
+                            <div className="flex justify-center items-center">
+                                <img className="w-20" src="https://i.ibb.co/nrTMJWB/Logo-1.png" alt="" />
+                                <h1 className="md:text-5xl text-4xl font-bold text-black">তথ্যপ্রবাহ</h1>
+                            </div>
+                        </Link>
                     </div>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex text-2xl">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link to={"/"}>Home</Link></li>
+                        <li><Link to={"/"} className="text-xl">হোম</Link></li>
                         <li>
                             <details>
-                                <summary>Journal</summary>
-                                <ul className="p-2 text-black w-40 bg-white">
-                                    <li><Link to={"journal/current"}>Current Affairs</Link></li>
-                                    <li><Link to={"journal/romantic"}>Romantic</Link></li>
-                                    <li><Link to={"journal/sports"}>Sports</Link></li>
-                                    <li><Link to={"journal/entertainment"}>Entertainment</Link></li>
-                                    <li><Link to={"journal/science"}>Science</Link></li>
-                                    <li><Link to={"journal/horror"}>Horror</Link></li>
+                                <summary className="text-xl">জার্নাল</summary>
+                                <ul className="p-2 text-black w-80 bg-white">
+                                    <li><Link to={"journal/current"} className="text-xl">বর্তমান ঘটনা</Link></li>
+                                    {/* <li><Link to={"journal/romantic"}>Romantic</Link></li> */}
+                                    {/* <li><Link to={"journal/sports"}>Sports</Link></li> */}
+                                    {/* <li><Link to={"journal/entertainment"}>Entertainment</Link></li> */}
+                                    {/* <li><Link to={"journal/science"}>Science</Link></li> */}
+                                    {/* <li><Link to={"journal/horror"}>Horror</Link></li> */}
                                 </ul>
                             </details>
                         </li>
-                        <li><Link to={"/gallery"}>Gallery</Link></li>
-                        <li><Link to={"/member"}>Member</Link></li>
-                        <li><Link to={"/about"}>About</Link></li>
-                        <li><Link to={"/contact"}>Contact</Link></li>
+                        {/* <li><Link to={"/gallery"}>Gallery</Link></li> */}
+                        {/* <li><Link to={"/member"}>Member</Link></li> */}
+                        <li><Link to={"/about"} className="text-xl">আমাদের সম্পর্কে</Link></li>
+                        {/* <li><Link to={"/contact"}>Contact</Link></li> */}
                     </ul>
                 </div>
                 <div className="navbar-end pr-6">

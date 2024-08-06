@@ -8,9 +8,9 @@ const CardC = ({ item }) => {
             {
                 img ?
                     <>
-                        <div className='grid lg:grid-cols-2 sm:grid-cols-1 px-10 pb-8 gap-10 items-center'>
+                        <div className='px-10 pb-8 gap-10 items-center'>
                             <div className="">
-                                <div className="flex justify-start items-center gap-3 pb-1 text-gray-600 text-sm">
+                                <div className=" pb-1 text-gray-600 text-sm">
                                     <p>{date_published}</p>
                                     <div>
                                         {tags?.map((tag, index) => (
@@ -25,15 +25,15 @@ const CardC = ({ item }) => {
                                         <i className="fas fa-fire"></i> popular
                                     </p>
                                 )}</p>
-                                <div className="text-3xl text-black font-semibold pb-4">{title}</div>
+                                <div className="text-3xl text-black font-semibold pb-2">{title}</div>
+                                <div className='py-6'>
+                                    <img className='w-[600px] rounded-lg' src={img} alt="" />
+                                </div>
                                 <div className="pb-2 text-xl text-black tiro-bangla-regular">{content}</div>
                                 <div className=''>
                                     <h1 className="text-indigo-700 font-bold text-2xl author-name">{author}</h1>
                                     {author_info ? <h1 className="text-black font-bold author-name">{author_info}</h1> : null}
                                 </div>
-                            </div>
-                            <div className='pr-10'>
-                                <img className='w-[600px] rounded-lg' src={img} alt="" />
                             </div>
                             <div className="divider"></div>
                         </div>

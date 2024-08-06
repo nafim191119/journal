@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..900&display=swap');
+
+.author-name {
+  font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+}
+
+.tiro-bangla-regular {
+  font-family: "Tiro Bangla", serif;
+  font-weight: 400;
+  font-style: normal;
+}
