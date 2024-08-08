@@ -6,15 +6,15 @@ const About = () => {
             <h1 className="text-4xl uppercase underline font-bold pt-8 mb-4 text-center">About</h1>
             <div className="md:px-20 space-y-6 pb-10">
                 <div className="">
-                    <p className="text-start px-8 pt-4">Welcome to [Your Website Name], your premier destination for insightful articles and captivating journals. Our mission is to provide a platform where knowledge meets creativity, delivering high-quality content across a wide range of categories including Romantic, Entertainment, Sport, and Science.</p>
+                    <p className="text-start px-8 pt-4">Welcome to তথ্যপ্রবাহ, your premier destination for insightful articles and captivating journals. Our mission is to provide a platform where knowledge meets creativity, delivering high-quality content across a wide range of categories including Romantic, Entertainment, Sport, and Science.</p>
                 </div>
                 <div className="px-4">
                     <h1 className="text-2xl text-start font-bold underline">Our Story</h1>
-                    <p className="text-start px-8 pt-4">Founded in [Year], [Your Website Name] was born out of a passion for storytelling and a desire to share valuable information with the world. We believe that every story has the power to inspire, inform, and entertain. Our team of dedicated writers, editors, and content creators works tirelessly to bring you the best in journalism and creative writing.</p>
+                    <p className="text-start px-8 pt-4">Founded in 2020, তথ্যপ্রবাহ was born out of a passion for storytelling and a desire to share valuable information with the world. We believe that every story has the power to inspire, inform, and entertain. Our team of dedicated writers, editors, and content creators works tirelessly to bring you the best in journalism and creative writing.</p>
                 </div>
                 <div className="px-4">
                     <h1 className="text-2xl text-start font-bold underline">Our Vision</h1>
-                    <p className="text-start px-8 pt-4">At [Your Website Name], we envision a world where knowledge is accessible to everyone. We strive to be a trusted source of information and a platform where diverse voices can be heard. Whether you're looking for the latest scientific discoveries, heartwarming romantic tales, thrilling sports updates, or entertainment news, we've got you covered.</p>
+                    <p className="text-start px-8 pt-4">At তথ্যপ্রবাহ, we envision a world where knowledge is accessible to everyone. We strive to be a trusted source of information and a platform where diverse voices can be heard. Whether you're looking for the latest scientific discoveries, heartwarming romantic tales, thrilling sports updates, or entertainment news, we've got you covered.</p>
                 </div>
                 <div className="px-4">
                     <h1 className="text-2xl text-start font-bold underline">Our Values</h1>
@@ -31,7 +31,7 @@ const About = () => {
                 </div>
                 <div className="px-4">
                     <h1 className="text-2xl text-start font-bold underline">Thank You</h1>
-                    <p className="text-start px-8 pt-4">Thank you for being a part of the [Your Website Name] community. We are excited to have you on this journey with us and look forward to bringing you more great content every day.</p>
+                    <p className="text-start px-8 pt-4">Thank you for being a part of the তথ্যপ্রবাহ community. We are excited to have you on this journey with us and look forward to bringing you more great content every day.</p>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import "../subPages/Nav.css";
 
 
 const Nav = () => {
-    const isAdmin = false;
+    
     return (
         <div>
             <div className="bg-base-300 py-1 flex text-white font-bold gap-1 justify-end text-sm">
@@ -55,7 +55,7 @@ const Nav = () => {
                         <Link to={"/"}>
                             <div className="flex justify-center items-center">
                                 <img className="w-20" src="https://i.ibb.co/nrTMJWB/Logo-1.png" alt="" />
-                                <h1 className="md:text-5xl text-4xl font-bold text-black">তথ্যপ্রবাহ</h1>
+                                <h1 className="md:text-5xl text-3xl font-bold text-black">তথ্যপ্রবাহ</h1>
                             </div>
                         </Link>
                     </div>
@@ -66,7 +66,7 @@ const Nav = () => {
                         <li>
                             <details>
                                 <summary className="text-xl">জার্নাল</summary>
-                                <ul className="p-2 text-black w-80 bg-white">
+                                <ul className="p-2 text-black w-48 bg-white">
                                     <li><Link to={"journal/current"} className="text-xl">বর্তমান ঘটনা</Link></li>
                                     {/* <li><Link to={"journal/romantic"}>Romantic</Link></li> */}
                                     {/* <li><Link to={"journal/sports"}>Sports</Link></li> */}
@@ -83,18 +83,7 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end pr-6">
-                    {
-                        isAdmin ?
-                            <div>
-                                <div className="avatar">
-                                    <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2 hover:pointed">
-                                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                                    </div>
-                                </div>
-                            </div>
-                            :
-                            null
-                    }
+                    <Link>Login</Link>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ const CardC = ({ item }) => {
                     <>
                         <div className='px-10 pb-8 gap-10 items-center'>
                             <div className="">
-                                <div className=" pb-1 text-gray-600 text-sm">
+                                <div className="flex pb-1 text-gray-600 text-sm gap-3">
                                     <p>{date_published}</p>
                                     <div>
                                         {tags?.map((tag, index) => (
