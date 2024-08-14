@@ -27,7 +27,7 @@ const CardC = ({ item }) => {
                                 )}</p>
                                 <div className="text-3xl text-black font-semibold pb-2">{title}</div>
                                 <div className='py-6'>
-                                    <img className='w-[600px] rounded-lg' src={img} alt="" />
+                                    <img className='w-[600px] h-[400px] rounded-lg' src={img} alt="" />
                                 </div>
                                 <div className="pb-2 text-xl text-black tiro-bangla-regular">{content}</div>
                                 <div className=''>

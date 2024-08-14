@@ -1,12 +1,11 @@
-// LogIn.jsx
+// SignInPage.jsx
 import { useEffect, useState } from 'react';
-import { auth } from '../../firebase/firebase.config'; // Path to your firebase.js file
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../firebase/firebase.config';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../../components/SocialLogin/SocialLogin';
-import Swal from 'sweetalert2';
 
-const LogIn = () => {
+const SignInPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -18,23 +17,15 @@ const LogIn = () => {
         }
     }, [navigate]);
 
-    const handleLogin = async (e) => {
+    const handleSignUp = async (e) => {
         e.preventDefault();
         try {
-            await signInWithEmailAndPassword(auth, email, password);
-            // Redirect or perform any other action on successful login
-            Swal.fire({
-                position: "top-center",
-                icon: "success",
-                title: "Login Successfully",
-                showConfirmButton: false,
-                timer: 1500
-              });
-              navigate('/');
-            console.log("Logged in successfully!");
+            await createUserWithEmailAndPassword(auth, email, password);
+            // Redirect or perform any other action on successful signup
+            console.log("Signed up successfully!");
         } catch (error) {
             setError(error.message);
-            console.error("Login failed:", error);
+            console.error("Signup failed:", error);
         }
     };
 
@@ -43,10 +34,10 @@ const LogIn = () => {
             <div className="hero bg-gray-100 py-10">
                 <div className="hero-content flex-col lg:flex-row-reverse text-black">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
+                        <h1 className="text-5xl font-bold">Sign Up now!</h1>
                     </div>
                     <div className="card bg-gray-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <form className="card-body" onSubmit={handleLogin}>
+                        <form className="card-body" onSubmit={handleSignUp}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-black">Email</span>
@@ -72,13 +63,10 @@ const LogIn = () => {
                                     onChange={(e) => setPassword(e.target.value)}
                                     required
                                 />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
                             </div>
                             {error && <p className="text-red-500 text-sm">{error}</p>}
                             <div className="form-control mt-6">
-                                <button type="submit" className="btn btn-primary">Login</button>
+                                <button type="submit" className="btn btn-primary">Sign Up</button>
                             </div>
                             <SocialLogin></SocialLogin>
                         </form>
@@ -89,4 +77,4 @@ const LogIn = () => {
     );
 };
 
-export default LogIn;
+export default SignInPage;
