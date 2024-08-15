@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet";
 
 const About = () => {
     
     return (
         <div className="bg-gray-100 text-black">
+            <Helmet>
+                <title>তথ্যপ্রবাহ | About</title>
+            </Helmet>
             <h1 className="text-4xl uppercase underline font-bold pt-8 mb-4 text-center">পরিচিতি</h1>
             <div className="md:px-20 space-y-6 pb-10">
                 <div className="">

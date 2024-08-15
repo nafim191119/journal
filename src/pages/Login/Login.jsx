@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../../components/SocialLogin/SocialLogin';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const LogIn = () => {
     const [email, setEmail] = useState('');
@@ -29,8 +30,8 @@ const LogIn = () => {
                 title: "Login Successfully",
                 showConfirmButton: false,
                 timer: 1500
-              });
-              navigate('/');
+            });
+            navigate('/');
             console.log("Logged in successfully!");
         } catch (error) {
             setError(error.message);
@@ -41,6 +42,9 @@ const LogIn = () => {
     return (
         <div>
             <div className="hero bg-gray-100 py-10">
+                <Helmet>
+                    <title>তথ্যপ্রবাহ | Login</title>
+                </Helmet>
                 <div className="hero-content flex-col lg:flex-row-reverse text-black">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Login now!</h1>

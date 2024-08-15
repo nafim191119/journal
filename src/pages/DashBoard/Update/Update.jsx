@@ -36,17 +36,17 @@ const Update = () => {
                             console.error('Error updating server:', error);
                         });
                 }
-        })
-        .catch(error => {
-            console.error('Error uploading image:', error);
-        });
+            })
+            .catch(error => {
+                console.error('Error uploading image:', error);
+            });
         Swal.fire({
             position: "top-end",
             icon: "success",
             title: "Your content uploaded",
             showConfirmButton: false,
             timer: 1500
-          });
+        });
         reset();
     };
 
@@ -54,12 +54,20 @@ const Update = () => {
         <div className="p-4 md:p-8 lg:p-16">
             <div className="w-full max-w-xl mx-auto bg-blue-100 shadow-md rounded p-6">
                 <form onSubmit={handleSubmit(onSubmit)} className="card-body" >
-                    <label className="form-control w-full ">
-                        <div className="label">
-                            <span className="label-text font-semibold text-black">Date*</span>
-                        </div>
-                        <input {...register("date_published", { required: true })} type="text" placeholder="Date" className=" text-black input input-bordered w-full  bg-white" />
-                    </label>
+                    <div className="flex gap-4">
+                        <label className="form-control w-full ">
+                            <div className="label">
+                                <span className="label-text font-semibold text-black">Date*</span>
+                            </div>
+                            <input {...register("date_published", { required: true })} type="text" placeholder="Date" className=" text-black input input-bordered w-full  bg-white" />
+                        </label>
+                        <label className="form-control w-full ">
+                            <div className="label">
+                                <span className="label-text font-semibold text-black">Tags</span>
+                            </div>
+                            <input {...register("tags")} type="text" placeholder="Tags" className="text-black input input-bordered w-full  bg-white" />
+                        </label>
+                    </div>
                     <div className="flex gap-4">
                         <label className="form-control w-full ">
                             <div className="label">
@@ -82,24 +90,20 @@ const Update = () => {
                         </label>
                     </div>
 
-                    <label className="form-control w-full ">
-                        <div className="label">
-                            <span className="label-text font-semibold text-black">Author Name*</span>
-                        </div>
-                        <input {...register("author", { required: true })} type="text" placeholder="Author Name" className="text-black input input-bordered w-full  bg-white" />
-                    </label>
-                    <label className="form-control w-full ">
-                        <div className="label">
-                            <span className="label-text font-semibold text-black">Author Info</span>
-                        </div>
-                        <input {...register("author_info")} type="text" placeholder="Author Info" className="text-black input input-bordered w-full  bg-white" />
-                    </label>
-                    <label className="form-control w-full ">
-                        <div className="label">
-                            <span className="label-text font-semibold text-black">Tags</span>
-                        </div>
-                        <input {...register("tags")} type="text" placeholder="Tags" className="text-black input input-bordered w-full  bg-white" />
-                    </label>
+                    <div className="flex gap-4">
+                        <label className="form-control w-full ">
+                            <div className="label">
+                                <span className="label-text font-semibold text-black">Author Name*</span>
+                            </div>
+                            <input {...register("author", { required: true })} type="text" placeholder="Author Name" className="text-black input input-bordered w-full  bg-white" />
+                        </label>
+                        <label className="form-control w-full ">
+                            <div className="label">
+                                <span className="label-text font-semibold text-black">Author Info</span>
+                            </div>
+                            <input {...register("author_info")} type="text" placeholder="Author Info" className="text-black input input-bordered w-full  bg-white" />
+                        </label>
+                    </div>
                     <label className="form-control w-full ">
                         <div className="label">
                             <span className="label-text font-semibold text-black">Content*</span>

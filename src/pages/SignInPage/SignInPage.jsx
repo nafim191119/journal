@@ -4,6 +4,7 @@ import { auth } from '../../firebase/firebase.config';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../../components/SocialLogin/SocialLogin';
+import { Helmet } from 'react-helmet';
 
 const SignInPage = () => {
     const [email, setEmail] = useState('');
@@ -32,6 +33,9 @@ const SignInPage = () => {
     return (
         <div>
             <div className="hero bg-gray-100 py-10">
+                <Helmet>
+                    <title>তথ্যপ্রবাহ | SignIn</title>
+                </Helmet>
                 <div className="hero-content flex-col lg:flex-row-reverse text-black">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Sign Up now!</h1>
