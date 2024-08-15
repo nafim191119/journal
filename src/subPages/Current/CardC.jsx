@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "../Current/fontC.css";
 
 const CardC = ({ item }) => {
-    const { id, title, category, author, date_published, content, tags, popular, img, author_info } = item;
+    const { id, title, category, author, date_published, content, tags = [], popular, img, author_info } = item;
     return (
         <div>
             {
@@ -13,9 +13,13 @@ const CardC = ({ item }) => {
                                 <div className="flex pb-1 text-gray-600 text-sm gap-3">
                                     <p>{date_published}</p>
                                     <div>
-                                        {tags?.map((tag, index) => (
-                                            <span className="text-sm font-bold text-indigo-700 underline" key={index} style={{ marginRight: "16px" }}>
-                                                {tag ? tag : null}
+                                        {Array.isArray(tags) && tags.map((tag, index) => (
+                                            <span
+                                                className="text-sm font-bold text-indigo-700 underline"
+                                                key={index}
+                                                style={{ marginRight: "16px" }}
+                                            >
+                                                {tag}
                                             </span>
                                         ))}
                                     </div>

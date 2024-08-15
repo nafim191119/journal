@@ -4,7 +4,7 @@ import CardC from "./CardC";
 const Current = () => {
     const [current, setCurrent] = useState([]);
     useEffect(() => {
-        fetch('/public/current.json')
+        fetch('http://localhost:5000/current')
             .then(res => res.json())
             .then(data => {
                 const sortedData = data.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
