@@ -3,35 +3,35 @@ const About = () => {
     
     return (
         <div className="bg-gray-100 text-black">
-            <h1 className="text-4xl uppercase underline font-bold pt-8 mb-4 text-center">About</h1>
+            <h1 className="text-4xl uppercase underline font-bold pt-8 mb-4 text-center">পরিচিতি</h1>
             <div className="md:px-20 space-y-6 pb-10">
                 <div className="">
-                    <p className="text-start px-8 pt-4">Welcome to তথ্যপ্রবাহ, your premier destination for insightful articles and captivating journals. Our mission is to provide a platform where knowledge meets creativity, delivering high-quality content across a wide range of categories including Romantic, Entertainment, Sport, and Science.</p>
+                    <p className="text-start px-8 pt-4">স্বাগতম তথ্যপ্রবাহ-এ, আপনার মনের মতো নিবন্ধ ও আকর্ষণীয় জার্নালের গন্তব্য। আমাদের লক্ষ্য হল একটি প্ল্যাটফর্ম প্রদান করা যেখানে জ্ঞান সৃজনশীলতার সাথে মেলে, রোমান্টিক, বিনোদন, খেলা এবং বিজ্ঞান সহ বিভিন্ন শ্রেণিতে উচ্চ-মানের কন্টেন্ট সরবরাহ করা।</p>
                 </div>
                 <div className="px-4">
-                    <h1 className="text-2xl text-start font-bold underline">Our Story</h1>
-                    <p className="text-start px-8 pt-4">Founded in 2020, তথ্যপ্রবাহ was born out of a passion for storytelling and a desire to share valuable information with the world. We believe that every story has the power to inspire, inform, and entertain. Our team of dedicated writers, editors, and content creators works tirelessly to bring you the best in journalism and creative writing.</p>
+                    <h1 className="text-2xl text-start font-bold underline">আমাদের গল্প</h1>
+                    <p className="text-start px-8 pt-4">২০২০ সালে প্রতিষ্ঠিত, তথ্যপ্রবাহ গল্প বলার প্রতি ভালবাসা এবং সারা বিশ্বে মূল্যবান তথ্য শেয়ার করার ইচ্ছা থেকে জন্মগ্রহণ করেছিল। আমরা বিশ্বাস করি যে প্রতিটি গল্প অনুপ্রাণিত করতে, তথ্য প্রদান করতে এবং বিনোদন দিতে পারে। আমাদের নিবেদিত লেখক, সম্পাদক এবং কন্টেন্ট স্রষ্টার দল আপনাকে সেরা সাংবাদিকতা এবং সৃজনশীল লেখা উপহার দেওয়ার জন্য কঠোর পরিশ্রম করে।</p>
                 </div>
                 <div className="px-4">
-                    <h1 className="text-2xl text-start font-bold underline">Our Vision</h1>
-                    <p className="text-start px-8 pt-4">At তথ্যপ্রবাহ, we envision a world where knowledge is accessible to everyone. We strive to be a trusted source of information and a platform where diverse voices can be heard. Whether you're looking for the latest scientific discoveries, heartwarming romantic tales, thrilling sports updates, or entertainment news, we've got you covered.</p>
+                    <h1 className="text-2xl text-start font-bold underline">আমাদের ভিশন</h1>
+                    <p className="text-start px-8 pt-4">তথ্যপ্রবাহ-এ, আমরা এমন একটি বিশ্ব কল্পনা করি যেখানে জ্ঞান সবার জন্য সহজলভ্য। আমরা একটি বিশ্বস্ত তথ্যের উৎস এবং একটি প্ল্যাটফর্ম হওয়ার জন্য চেষ্টা করি যেখানে বিভিন্ন কণ্ঠস্বর শোনা যেতে পারে। আপনি যদি সাম্প্রতিক বৈজ্ঞানিক আবিষ্কার, হৃদয়গ্রাহী রোমান্টিক গল্প, রোমাঞ্চকর খেলার খবর অথবা বিনোদনের খবর খুঁজে থাকেন, তাহলে আমাদের কন্টেন্টই আপনার ঠিকানা।</p>
                 </div>
                 <div className="px-4">
-                    <h1 className="text-2xl text-start font-bold underline">Our Values</h1>
+                    <h1 className="text-2xl text-start font-bold underline">আমাদের মূল্যবোধ</h1>
                     <ul className="text-start px-8 pt-4 space-y-1">
-                        <li> <span className="font-bold">Quality:</span> We are committed to providing well-researched, high-quality content that our readers can rely on.</li>
-                        <li> <span className="font-bold">Integrity:</span> We uphold the highest standards of integrity in all our articles, ensuring that our content is honest, accurate, and unbiased.</li>
-                        <li> <span className="font-bold">Creativity:</span> We encourage creativity and innovation, always looking for new ways to engage and inspire our readers.</li>
-                        <li> <span className="font-bold">Community:</span> We value our community of readers and contributors, fostering an inclusive environment where everyone is welcome to share their stories and ideas.</li>
+                        <li> <span className="font-bold">গুণমান:</span>আমরা আমাদের পাঠকদের নির্ভরযোগ্য, গভীর-গবেষণামূলক, উচ্চ-মানের কন্টেন্ট প্রদান করতে প্রতিশ্রুতিবদ্ধ।</li>
+                        <li> <span className="font-bold">অখণ্ডতা:</span>আমরা আমাদের সমস্ত নিবন্ধে সর্বোচ্চ অখণ্ডতার মান রক্ষা করি, নিশ্চিত করে যে আমাদের কন্টেন্ট সৎ, সঠিক এবং নিরপেক্ষ।</li>
+                        <li> <span className="font-bold">সৃজনশীলতা:</span>আমরা সৃজনশীলতা এবং উদ্ভাবনকে উৎসাহিত করি, আমাদের পাঠকদের জড়িত ও অনুপ্রাণিত করার জন্য সবসময় নতুন উপায় খুঁজে থাকি।</li>
+                        <li> <span className="font-bold">সম্প্রদায়:</span>আমরা আমাদের পাঠক ও অবদানকারীদের সম্প্রদায়কে মূল্য দেই, একটি অন্তর্ভুক্তিমূলক পরিবেশ তৈরি করি যেখানে সবাই তাদের গল্প ও ধারণা শেয়ার করতে পারে।</li>
                     </ul>
                 </div>
                 <div className="px-4">
-                    <h1 className="text-2xl text-start font-bold underline">Join Us</h1>
-                    <p className="text-start px-8 pt-4">We are always looking for talented writers and contributors who share our passion for quality content. If you have a story to tell or an article to share, we would love to hear from you. Visit our [Contact Us/Join Us] page to learn more.</p>
+                    <h1 className="text-2xl text-start font-bold underline">যোগ দিন আমাদের সাথে</h1>
+                    <p className="text-start px-8 pt-4">আমরা সর্বদা প্রতিভাবান লেখক এবং অবদানকারীদের সন্ধান করি যারা আমাদের গুণমান কন্টেন্টের প্রতি ভালোবাসা ভাগ করে। আপনার যদি বলার মতো কোনো গল্প বা শেয়ার করার মতো কোনো নিবন্ধ থাকে, তবে আমরা আপনাকে শুনতে চাই। আমাদের [যোগাযোগ করুন/যোগ দিন] পৃষ্ঠা পরিদর্শন করুন আরো জানতে।</p>
                 </div>
                 <div className="px-4">
-                    <h1 className="text-2xl text-start font-bold underline">Thank You</h1>
-                    <p className="text-start px-8 pt-4">Thank you for being a part of the তথ্যপ্রবাহ community. We are excited to have you on this journey with us and look forward to bringing you more great content every day.</p>
+                    <h1 className="text-2xl text-start font-bold underline">ধন্যবাদ</h1>
+                    <p className="text-start px-8 pt-4">তথ্যপ্রবাহ সম্প্রদায়ের অংশ হওয়ার জন্য আপনাকে ধন্যবাদ। আমরা আপনাকে আমাদের এই যাত্রায় সঙ্গী হিসেবে পেয়ে আনন্দিত এবং প্রতিদিন আপনাদের আরও চমৎকার কন্টেন্ট উপহার দেওয়ার জন্য আগ্রহী।</p>
                 </div>
             </div>
         </div>

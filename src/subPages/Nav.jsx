@@ -6,6 +6,7 @@ import Clock from '../components/Clock';
 import Calander from '../components/Calander';
 import "../subPages/Nav.css";
 
+
 const Nav = () => {
     const navigate = useNavigate();
     const user = auth.currentUser;
@@ -19,6 +20,7 @@ const Nav = () => {
         }
     };
     const isAdmin = user?.email === 'nafim191119@gmail.com';
+
 
     return (
         <div>
@@ -56,7 +58,7 @@ const Nav = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="navbar-center hidden lg:flex text-2xl">
+                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to={"/"} className="text-xl">হোম</Link></li>
                         <li>
@@ -71,13 +73,26 @@ const Nav = () => {
                         {isAdmin && <li><Link to={"/admin/dashboard"} className="text-xl">Dashboard</Link></li>}
                     </ul>
                 </div>
-                <div className="navbar-end pr-6 gap-6">
+                <div className="navbar-end pr-6 gap-6 text-xl">
                     {user ? (
-                        <button onClick={handleSignOut} className="btn btn-outline btn-xs rounded-full">Sign Out</button>
+                        <>
+                            <button onClick={handleSignOut} className="rounded-full">সাইন আউট</button>
+                            <div className="avatar">
+                                <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2">
+                                    <img src="" />
+                                    <details>
+                                        <ul className="p-2 text-black w-48 bg-white">
+                                            <li></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </div>
+                        </>
+
                     ) : (
                         <>
-                            <Link to={"/login"}>Login</Link>
-                            <Link to={"/signin"}>SignUp</Link>
+                            <Link to={"/login"}>লগইন </Link>
+                            <Link to={"/signin"}>সাইন ইন</Link>
                         </>
                     )}
                 </div>
