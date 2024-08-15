@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 
 const imgHostingToken = import.meta.env.VITE_Image_Upload_Token;
@@ -39,6 +40,13 @@ const Update = () => {
         .catch(error => {
             console.error('Error uploading image:', error);
         });
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your content uploaded",
+            showConfirmButton: false,
+            timer: 1500
+          });
         reset();
     };
 
