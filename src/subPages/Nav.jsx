@@ -10,6 +10,7 @@ import "../subPages/Nav.css";
 const Nav = () => {
     const navigate = useNavigate();
     const user = auth.currentUser;
+    const isAdmin = user?.email === 'nafim191119@gmail.com';
 
     const handleSignOut = async () => {
         try {
@@ -19,7 +20,7 @@ const Nav = () => {
             console.error('Sign out failed:', error);
         }
     };
-    const isAdmin = user?.email === 'nafim191119@gmail.com';
+
 
 
     return (
@@ -65,7 +66,7 @@ const Nav = () => {
                             <details>
                                 <summary className="text-xl">জার্নাল</summary>
                                 <ul className="p-2 text-black w-48 bg-white">
-                                    <li><Link to={"journal/current"} className="text-xl">বর্তমান ঘটনা</Link></li>
+                                    <li><Link to={"journal/current"}>বর্তমান ঘটনা</Link></li>
                                 </ul>
                             </details>
                         </li>
@@ -79,12 +80,7 @@ const Nav = () => {
                             <button onClick={handleSignOut} className="rounded-full">সাইন আউট</button>
                             <div className="avatar">
                                 <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2">
-                                    <img src="" />
-                                    <details>
-                                        <ul className="p-2 text-black w-48 bg-white">
-                                            <li></li>
-                                        </ul>
-                                    </details>
+                                    <img src={user.photoURL || '/default-avatar.png'} />
                                 </div>
                             </div>
                         </>

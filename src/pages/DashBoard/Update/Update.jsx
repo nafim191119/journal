@@ -113,7 +113,7 @@ const Update = () => {
                     <div className="form-control">
                         <label className="label cursor-pointer">
                             <span className="label-text text-black text-xl font-semibold">Popular?</span>
-                            <input {...register("popular", { required: true })} type="checkbox" defaultChecked className="checkbox checkbox-primary" />
+                            <input {...register("popular")} type="checkbox" className="checkbox checkbox-primary" />
                         </label>
                     </div>
                     <input type="file" {...register("img")} className="file-input file-input-bordered file-input-primary w-full  bg-white mt-4" />
