@@ -43,6 +43,11 @@ const Nav = () => {
                                     <summary>জার্নাল</summary>
                                     <ul className="p-2">
                                         <li><Link to={"journal/current"}>বর্তমান ঘটনা</Link></li>
+                                        <li><Link to={"journal/romantic"}>রোম্যান্টিক</Link></li>
+                                        <li><Link to={"journal/sports"}>খেলাধুলা</Link></li>
+                                        <li><Link to={"journal/entertainment"}>বিনোদন</Link></li>
+                                        <li><Link to={"journal/horror"}>ভয়</Link></li>
+                                        <li><Link to={"journal/science"}>বিজ্ঞান</Link></li>
                                     </ul>
                                 </details>
                             </li>
@@ -67,6 +72,11 @@ const Nav = () => {
                                 <summary className="text-xl">জার্নাল</summary>
                                 <ul className="p-2 text-black w-48 bg-white">
                                     <li><Link to={"journal/current"}>বর্তমান ঘটনা</Link></li>
+                                    <li><Link to={"journal/romantic"}>রোম্যান্টিক</Link></li>
+                                    <li><Link to={"journal/sports"}>খেলাধুলা</Link></li>
+                                    <li><Link to={"journal/entertainment"}>বিনোদন</Link></li>
+                                    <li><Link to={"journal/horror"}>ভয়</Link></li>
+                                    <li><Link to={"journal/science"}>বিজ্ঞান</Link></li>
                                 </ul>
                             </details>
                         </li>

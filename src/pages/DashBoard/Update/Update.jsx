@@ -84,8 +84,9 @@ const Update = () => {
                                 <option>Current</option>
                                 <option>Entertainment</option>
                                 <option>Science</option>
-                                <option>Planet of the Apes</option>
-                                <option>Star Trek</option>
+                                <option>Horror</option>
+                                <option>Romantic</option>
+                                <option>Sports</option>
                             </select>
                         </label>
                     </div>

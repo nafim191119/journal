@@ -24,11 +24,11 @@ const CardC = ({ item }) => {
                                         ))}
                                     </div>
                                 </div>
-                                <p className="text-red-500">{popular && (
-                                    <p className="text-red-500  pb-2 font-semibold">
+                                {popular && (
+                                    <div className="text-red-500 pb-2 font-semibold">
                                         <i className="fas fa-fire"></i> popular
-                                    </p>
-                                )}</p>
+                                    </div>
+                                )}
                                 <div className="text-3xl text-black font-semibold pb-2">{title}</div>
                                 <div className='py-6'>
                                     <img className='w-[600px] h-[400px] rounded-lg' src={img} alt="" />

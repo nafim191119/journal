@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
-import CardH from "./CardH";
+import useLoadData from "../../hooks/LoadData/useLoadData";
+import CardC from "../Current/CardC";
 
 const Horror = () => {
-    const [horror, setHorror] = useState([]);
-    useEffect(() => {
-        fetch('/public/horror.json')
-            .then(res => res.json())
-            .then(data => setHorror(data))
-    }, []);
+    const [journal] = useLoadData();
+    console.group(journal);
+    const horror = journal.filter(item => item.category === 'Horror');
+    console.log(horror);
 
     return (
         <div>
@@ -15,7 +13,7 @@ const Horror = () => {
                 <h1 className="text-3xl uppercase underline font-bold pt-8 mb-8 text-center text-black">Horror</h1>
                 <div>
                     {
-                        horror.map(item => <CardH item={item} key={item}></CardH>)
+                        horror.map(item => <CardC item={item} key={item}></CardC>)
                     }
                 </div>
             </div>

@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
-import CardS from "./CardS";
+import useLoadData from "../../hooks/LoadData/useLoadData";
+import CardC from "../Current/CardC";
 
 const Sports = () => {
-    const [sports, setSports] = useState([]);
-    useEffect(() => {
-        fetch('/public/sport.json')
-            .then(res => res.json())
-            .then(data => setSports(data))
-    }, []);
+    const [journal] = useLoadData();
+    const sports = journal.filter(item => item.category === 'Sports');
+
     return (
         <div>
             <div className="bg-gray-100">
                 <h1 className="text-3xl uppercase underline font-bold pt-8 mb-8 text-center text-black">Sports</h1>
                 <div>
                     {
-                        sports.map(item => <CardS item={item} key={item}></CardS>)
+                        sports.map(item => <CardC item={item} key={item}></CardC>)
                     }
                 </div>
             </div>
